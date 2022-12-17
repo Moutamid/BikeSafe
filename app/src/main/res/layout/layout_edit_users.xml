@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+           android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_face_24"
+            app:tint="#FCDF59" />
+
+        <LinearLayout
+            android:id="@+id/layout_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:tint="#FCDF59" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_baseline_delete_outline_24"
+                app:tint="#FCDF59" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toStartOf="@id/layout_options"
+            android:layout_toEndOf="@id/img_user"
+            android:layout_toRightOf="@id/img_user"
+            android:alpha="0.7"
+            android:text="Moutamid"
+            android:textColor="@color/dandelion"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/layout_options"
+            android:layout_toEndOf="@id/img_user"
+            android:layout_toRightOf="@+id/img_user"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="5dp"
+            android:text="Email:"
+            android:textColor="@color/dandelion"
+            android:textSize="16dp"
+            app:drawableTint="#C4C7C5" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/layout_options"
+            android:layout_toEndOf="@id/img_user"
+            android:layout_toRightOf="@+id/img_user"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:text="Username:"
+            android:textColor="@color/dandelion"
+            android:textSize="16dp"
+            app:drawableTint="#C4C7C5" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@id/layout_options"
+            android:layout_toEndOf="@id/img_user"
+            android:layout_toRightOf="@+id/img_user"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:text="Password:"
+            android:textColor="@color/dandelion"
+            android:textSize="16dp"
+            app:drawableTint="#C4C7C5" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
